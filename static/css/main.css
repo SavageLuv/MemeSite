@@ -1,0 +1,6 @@
+.bottom-right {
+      position: fixed;   /* stays fixed even when you scroll */
+      bottom: 10px;      /* distance from bottom */
+      right: 10px;       /* distance from right */
+      margin: 0;
+    }
