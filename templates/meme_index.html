@@ -8,12 +8,16 @@
 </head>
 <body>
     <div style="text-align: center;">
-    <h1>A Website to gather memes</h1>
-    <p>Here is your meme! It will refresh in 30 seconds</p>
-    <p><img src="{{meme_pic}}"></p>
-    <p> Current subreddit: {{subreddit}}</p>
+        <h1>A Website to gather memes</h1>
+        <p>Here is your meme! It will refresh in 30 seconds</p>
+        <p>
+            <img src="{{ meme_pic }}" alt="Meme image" style="max-width:90vw;max-height:60vh;">
+        </p>
+        {% if error %}
+            <p style="color:red;">Could not load a random meme at this time. Showing a fallback image.</p>
+        {% endif %}
+        <p> Current subreddit: {{ subreddit }}</p>
     </div>
-    
 
     <p class="bottom-right" > Dev: Kumi Kelvin</p>
     
